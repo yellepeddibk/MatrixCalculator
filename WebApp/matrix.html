@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">Matrix Calculator</h1>
+
+                <!-- Matrix Size Input -->
+                <div id="matrix-size-section" class="mt-4">
+                    <h4>Enter Matrix Size</h4>
+                    <div class="row">
+                        <div class="col">
+                            <input type="number" id="rows" class="form-control" placeholder="Rows">
+                        </div>
+                        <div class="col">
+                            <input type="number" id="cols" class="form-control" placeholder="Columns">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3" onclick="generateMatrix()">Generate Matrix</button>
+                </div>
+
+                <!-- Error Message Container -->
+                <div id="error-message" class="alert alert-danger" style="display:none;"></div>
+
+                <!-- Matrix Input Section -->
+                <div id="matrix-section" class="mt-4" style="display:none;">
+                    <h4>Enter Matrix Values</h4>
+                    <div id="matrix" class="matrix-container mb-3"></div>
+
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-warning" onclick="resetMatrix()">Reset</button>
+                        <button class="btn btn-success" onclick="calculate()">Calculate</button>
+                    </div>
+                </div>
+
+                <!-- Select Operation -->
+                <div class="mt-4">
+                    <h4>Select Operation</h4>
+                    <button id="determinant-button" class="btn btn-info" onclick="setOperation('determinant')">Determinant</button>
+                    <button id="rref-button" class="btn btn-info" onclick="setOperation('rref')">RREF</button>
+                </div>
+
+                <!-- Result Section -->
+                <div id="result-section" class="mt-4" style="display:none;">
+                    <h4>Result:</h4>
+                    <p id="result" class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="matrix.js"></script>
+</body>
+</html>

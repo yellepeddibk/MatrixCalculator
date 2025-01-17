@@ -1,0 +1,82 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Main container and card styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Headings */
+h1, h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Matrix Container */
+.matrix-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Matrix grid styling for better alignment */
+.matrix-grid {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.matrix-grid td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+
+/* Matrix input cells */
+.matrix-cell {
+    text-align: center;
+    font-size: 16px;
+    width: 60px;
+    height: 40px;
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Button layout and margins */
+button {
+    margin: 10px;
+}
+
+/* Styling for selected calculation buttons */
+.btn-selected {
+    background-color: #17a2b8;
+    color: white;
+    border-color: #117a8b;
+}
+
+/* Result section styling */
+#result {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}

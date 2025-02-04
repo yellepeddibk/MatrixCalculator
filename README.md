@@ -47,7 +47,8 @@ MatrixCalculator/
 │   └── style.css                 # Styling for the web app
 ├── LICENSE                       # MIT License file
 ├── PyQt5_Version.py              # PyQt5 GUI version of the calculator
-└── README.md                     # Documentation for the project (this file)
+├── README.md                     # Documentation for the project (this file)
+└── requirements.txt              # List of dependencies required to run the project
 ```
 ---
 
